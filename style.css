@@ -9,10 +9,6 @@
     --dark-theme: #272727;
     --yellow:#FFC700;
 
-    --color-green: #00a878;
-    --color-red: #fe5e41;
-    --color-button: #fdffff;
-    --color-black: #000;
 
     /* Fuentes */
     --font-section: 'Roboto Mono', monospace;
@@ -31,6 +27,12 @@ html {
     font-size: 62.5%;
 }
 
+nav {
+    position: relative;
+    top: 16px;    
+    left: 16px;
+}
+
 .switch-button {
     display: inline-block;
 }
@@ -41,8 +43,8 @@ html {
 
 .switch-button .switch-button__label {
     background-color: var(--light-orange);
-    width: 5rem;
-    height: 3rem;
+    width: 50px;
+    height: 30px;
     border-radius: 3rem;
     display: inline-block;
     position: relative;
@@ -52,12 +54,12 @@ html {
     transition: .2s;
     display: block;
     position: absolute;
-    width: 3rem;
-    height: 3rem;
-    background-color: var(--color-button);
+    width: 30px;
+    height: 30px;
+    background-color: var(--bk-white);
     content: '';
     border-radius: 50%;
-    box-shadow: inset 0px 0px 0px 1px var(--color-black);
+    box-shadow: inset 0px 0px 0px 1px var(--tx-black);
 }
 
 .switch-button .switch-button__checkbox:checked + .switch-button__label {
@@ -76,8 +78,7 @@ html {
     align-items: center;
 }
 
-.header-title {
-    margin-top: 50px;
+.header-title {    
     margin-bottom: 36px;
     font-family: var(--font-section);
     font-weight: var(--size-500);
