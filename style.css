@@ -1,0 +1,104 @@
+:root {
+    /* Colores */
+    --light-blue: #D4E6FF;
+    --dark-blue: #0053CC;
+    --light-orange: #FFE6DB;
+    --dark-orange: #E14400;
+    --bk-white: #FFFFFF;
+    --tx-black: #000000;
+
+
+    /* Fuentes */
+    --font-section: 'Roboto Mono', monospace;
+    --font-link: 'Roboto', sans-serif;
+    --size-400:400;
+    --size-500:500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+html {
+    font-size: 62.5%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-title {
+    margin-top: 66px;
+    margin-bottom: 48px;
+    font-family: var(--font-section);
+    font-weight: var(--size-500);
+    font-size: 3.2rem;
+    color: var(--tx-black);
+    line-height: 4.4rem;
+}
+
+.header-img img {
+    width: 160;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.main {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.main-section-description {
+    font-family: var(--font-section);
+    font-weight: var(--size-400);
+    font-size: 1.6rem;
+    color: var(--tx-black);
+    line-height: 2.4rem;
+    text-align: center;    
+}
+
+.main-section-link {    
+    margin-top: 30px;    
+} 
+
+.main-section-link ul li {
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section-link li {
+  list-style: none;
+} 
+
+.main-section-link ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 56px;    
+    margin-bottom: 16px;
+    background: var(--light-orange);  
+    font-family: var(--font-link);
+    font-weight: var(--size-400);
+    font-size: 1.6rem;
+    color: var(--dark-orange);
+    line-height: 1.8rem;
+    text-align: center;
+    text-decoration: none;    
+}
+
+.main-section-link ul li a:hover {
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+    border: 2px solid var(--dark-blue);
+}
