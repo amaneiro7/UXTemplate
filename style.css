@@ -40,7 +40,7 @@ html {
 }
 
 .switch-button .switch-button__label {
-    background-color: var(--color-red);
+    background-color: var(--light-orange);
     width: 5rem;
     height: 3rem;
     border-radius: 3rem;
@@ -61,7 +61,8 @@ html {
 }
 
 .switch-button .switch-button__checkbox:checked + .switch-button__label {
-    background-color: var(--color-green);
+    background-color: var(--dark-theme);
+    border: 1px solid var(--bk-white);
 }
 
 .switch-button .switch-button__checkbox:checked + .switch-button__label:before {
