@@ -11,8 +11,8 @@
     /* Fuentes */
     --font-section: 'Roboto Mono', monospace;
     --font-link: 'Roboto', sans-serif;
-    --size-400:400;
-    --size-500:500;
+    --size-400: 400;
+    --size-500: 500;
 }
 
 * {
@@ -33,23 +33,23 @@ html {
 }
 
 .header-title {
-    margin-top: 66px;
-    margin-bottom: 48px;
+    margin-top: 50px;
+    margin-bottom: 36px;
     font-family: var(--font-section);
     font-weight: var(--size-500);
-    font-size: 3.2rem;
+    font-size: 2.5rem;
     color: var(--tx-black);
-    line-height: 4.4rem;
+    line-height: 3.3rem;
 }
 
 .header-img img {
-    width: 160;
-    height: 160px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
 }
 
 .main {
-    margin-top: 50px;
+    margin-top: 36px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,12 +62,12 @@ html {
     font-weight: var(--size-400);
     font-size: 1.6rem;
     color: var(--tx-black);
-    line-height: 2.4rem;
+    line-height: 1.8rem;
     text-align: center;    
 }
 
 .main-section-link {    
-    margin-top: 30px;    
+    margin-top: 40px;    
 } 
 
 .main-section-link ul li {
@@ -85,12 +85,12 @@ html {
     justify-content: center;
     align-items: center;
     width: 90vw;
-    height: 56px;    
-    margin-bottom: 16px;
+    height: 42px;    
+    margin-bottom: 12px;
     background: var(--light-orange);  
     font-family: var(--font-link);
     font-weight: var(--size-400);
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     color: var(--dark-orange);
     line-height: 1.8rem;
     text-align: center;
@@ -100,5 +100,23 @@ html {
 .main-section-link ul li a:hover {
     background-color: var(--light-blue);
     color: var(--dark-blue);
+    font-weight: bold;
     border: 2px solid var(--dark-blue);
+}
+
+.footer ul {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer ul li {
+    margin-right: 24px;
+    list-style: none;
+}
+
+.footer ul li a img {
+    width: 20px;
+    height: 20px;
 }
