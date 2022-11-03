@@ -10,9 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="dark-theme">
+    <nav class="switch-button">
+        <!-- Checkbox -->
+        <input type="checkbox" name="switch-button" id="switch-label" class="switch-button__checkbox">
+        <!-- Botón -->
+        <label for="switch-label" class="switch-button__label"></label>
+    </nav>
     <header class="header">
-        <h1 class="header-title">
+        <h1 class="header-title dark-theme">
             Mauri
         </h1>
         <picture class="header-img">
@@ -21,23 +27,23 @@
     </header>        
     <main class="main">
         <section class="main-section">
-            <p class="main-section-description">
+            <p class="main-section-description dark-theme">
                 Breve descripción. También puedes incluir un llamado a la acción, por ejemplo: Mirá mi último video!
             </p>
         </section>
-        <section class="main-section-link hover">
+        <section class="main-section-link dark-theme">
             <ul>
                 <li>
-                    <a class="hover" id="onHover" href="/"> <span>Mi LinkdIn</span></a>
+                    <a href="/"> <span>Mi LinkdIn</span></a>
                 </li>
                 <li>
-                    <a class="hover" id="onHover" href="/"> <span>Trabajos experimentales</span></a>
+                    <a href="/"> <span>Trabajos experimentales</span></a>
                 </li>
                 <li>
-                    <a class="hover" id="onHover" href="/"> <span>Envíame email</span></a>
+                    <a href="/"> <span>Envíame email</span></a>
                 </li>
                 <li>
-                    <a class="hover" id="onHover" href="/"> <span>HolaJuniors.com</span></a>
+                    <a href="https://holajuniors.com/"> <span>HolaJuniors.com</span></a>
                 </li>
             </ul>
         </section>

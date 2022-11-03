@@ -6,7 +6,13 @@
     --dark-orange: #E14400;
     --bk-white: #FFFFFF;
     --tx-black: #000000;
+    --dark-theme: #272727;
+    --yellow:#FFC700;
 
+    --color-green: #00a878;
+    --color-red: #fe5e41;
+    --color-button: #fdffff;
+    --color-black: #000;
 
     /* Fuentes */
     --font-section: 'Roboto Mono', monospace;
@@ -23,6 +29,43 @@
 
 html {
     font-size: 62.5%;
+}
+
+.switch-button {
+    display: inline-block;
+}
+
+.switch-button .switch-button__checkbox {
+    display: none;
+}
+
+.switch-button .switch-button__label {
+    background-color: var(--color-red);
+    width: 5rem;
+    height: 3rem;
+    border-radius: 3rem;
+    display: inline-block;
+    position: relative;
+}
+
+.switch-button .switch-button__label:before {
+    transition: .2s;
+    display: block;
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--color-button);
+    content: '';
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 0px 1px var(--color-black);
+}
+
+.switch-button .switch-button__checkbox:checked + .switch-button__label {
+    background-color: var(--color-green);
+}
+
+.switch-button .switch-button__checkbox:checked + .switch-button__label:before {
+    transform: translateX(2rem);
 }
 
 .header {
@@ -119,4 +162,23 @@ html {
 .footer ul li a img {
     width: 20px;
     height: 20px;
+}
+
+/* Dark Theme */
+.dark-theme {
+    background-color: var(--dark-theme);
+    color: var(--bk-white);
+}
+
+.dark-theme.main-section-link ul li a {
+    background-color: var(--dark-theme);
+    color: var(--bk-white);
+    border: 2px solid var(--bk-white);
+}
+
+.dark-theme.main-section-link ul li a:hover{
+    background-color: var(--yellow);
+    border: 2px solid var(--yellow);
+    color: var(--tx-black);
+    font-weight: bold;
 }
